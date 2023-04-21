@@ -7,7 +7,10 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9, <3.12"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+matplotlib = "^3.7.1"
 
 [tool.poetry.dev-dependencies]
 
