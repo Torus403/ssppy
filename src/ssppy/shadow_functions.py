@@ -41,10 +41,10 @@ def shadow(sat_coords, sun_coords):
     elif c <= (b - a):
         F = 0.0
     elif np.abs(a - b) < c and c < (a + b):
-        x = ((c*2) + (a2) - (b*2)) / (2 * c)
-        y = np.sqrt((a*2) - (x*2))
-        A = (a*2) * np.arccos(x / a) + (b*2) * np.arccos((c - x) / b) - c * y
+        x = ((c**2) + (a**2) - (b**2)) / (2 * c)
+        y = np.sqrt((a**2) - (x**2))
+        A = (a**2) * np.arccos(x / a) + (b**2) * np.arccos((c - x) / b) - c * y
         F = 1.0 - (A / (math.pi * (a**2)))
     else:
-        F = 1 - ((b*2) / (a*2))
+        F = 1 - ((b**2) / (a**2))
     return F
